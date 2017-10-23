@@ -13,7 +13,7 @@ class ResourcesCompilerPass implements CompilerPassInterface
             $container->setParameter(
                 $parameter,
                 array_merge(
-                    array('NSSimpleMDEBundle:Form:fields.html.twig'),
+                    array('FBAlarmBundle:Form:fields.html.twig'),
                     $container->getParameter($parameter)
                 )
             );
