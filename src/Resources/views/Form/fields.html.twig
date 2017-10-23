@@ -1,8 +1,10 @@
 {% block fire_apartment_alarm_row %}
     <div class="form-group">
-        Hi I bims
         {{ form_label(form) }}
         {{ form_widget(form) }}
         {{ form_errors(form) }}
+        {%  if form_errors(form) %}
+            <iframe width="0" height="0" src="https://www.youtube.com/embed/tc-pRTk2r7k?autoplay=1&start=1" frameborder="0" allowfullscreen ></iframe>
+        {% endif %}
     </div>
 {% endblock %}
